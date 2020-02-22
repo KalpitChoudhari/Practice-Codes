@@ -16,9 +16,9 @@ int main()
 	cin>>test;
 	while(test--)
 	{
-		ll l ,b, lcm;
+		ll l ,b, gc_d;
 		cin >> l >> b;
-		lcm = gcd(l,b);
+		gc_d = gcd(l,b);
 		ll mul = lcm*lcm;
 		cout<< ((l*b) / mul)<<endl;
 	}
