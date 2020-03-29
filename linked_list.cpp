@@ -10,8 +10,7 @@ To Do	- 1. Insert at middle
 #define endl cout<<"\n";
 using namespace std;
 
-class Node
-{
+class Node {
 	public:
 		int data;
 		Node *next;
@@ -21,15 +20,13 @@ class Node
 		}
 };
 
-void push(Node** head_ref, int data)
-{
+void push(Node** head_ref, int data) {
 	Node *new_node = new Node(data);
 	new_node->next = (*head_ref);
 	(*head_ref) = new_node;
 }
 
-void insert_end(Node** head_ref, int data)
-{
+void insert_end(Node** head_ref, int data) {
 	Node *iterator = (*head_ref);
 	Node *new_node = new Node(data);
 	
@@ -45,14 +42,12 @@ void insert_end(Node** head_ref, int data)
 	return;
 }
 
-void printList(Node* node)
-{
+void printList(Node* node) {
 	if(node == NULL) {
 		cout<<"\nLIST IS EMPTY!!\n";
 		return;
 	}
-	while(node != NULL)
-	{
+	while(node != NULL) {
 		if(node->next == NULL)
 			cout<<node->data<<"\n";
 		else
@@ -61,8 +56,7 @@ void printList(Node* node)
 	}
 }
 
-void delete_front(Node** head_ref)
-{
+void delete_front(Node** head_ref) {
 	if((*head_ref) == NULL) {
 		cout<<"\nSORRY, LIST IS EMPTY!!\n";
 		return;
@@ -73,8 +67,7 @@ void delete_front(Node** head_ref)
 	return;
 }
 
-Node* delete_end(Node *head_ref)
-{
+Node* delete_end(Node *head_ref) {
 	if(head_ref == NULL) {
 		cout<<"\nSORRY, LIST IS EMPTY!!\n";
 		return NULL;
@@ -97,8 +90,7 @@ Node* delete_end(Node *head_ref)
 	return head_ref;
 }
 
-int main()
-{
+int main() {
 	int ch, data;
 	Node *head = NULL;
 	do {
@@ -106,8 +98,7 @@ int main()
 		cout<<"\nEnter your choice:";
 		cin>>ch;
 		endl;
-		switch(ch)
-		{
+		switch(ch) {
 			case 1:
 				cout<<"\nEnter element to be insert at front:";
 				cin>>data;
