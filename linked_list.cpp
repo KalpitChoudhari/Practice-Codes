@@ -1,6 +1,10 @@
 /*
 Author	- RooT NovA
 Program - Linked List
+To Do	- 1. Insert at middle
+	  2. Delete from given key	
+	  3. Sort list
+	  4. Swap elements
 */
 #include <bits/stdc++.h>
 #define endl cout<<"\n";
