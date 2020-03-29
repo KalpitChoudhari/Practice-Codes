@@ -105,7 +105,7 @@ int main() {
 				push(&head, data);
 				break;
 			case 2:
-				cout<<"\nEnter element to be insert at front:";
+				cout<<"\nEnter element to be insert at end:";
 				cin>>data;
 				insert_end(&head, data);
 				break;
